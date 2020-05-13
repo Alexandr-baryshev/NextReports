@@ -12,13 +12,69 @@ public class ReportsData implements Serializable {
    private String login;
    private String password;
 
+   private int reportNum;
    private String descriptWork;
    private String resultWork;
-   private int reportNum;
+
+   private String historyOut;
 
    public ReportsData(){}
+
+   public String getId() {
+      return id;
+   }
+
+   public void setId(String id) {
+      this.id = id;
+   }
+
+   public String getLogin() {
+      return login;
+   }
+
+   public void setLogin(String login) {
+      this.login = login;
+   }
+
+   public String getPassword() {
+      return password;
+   }
+
+   public void setPassword(String password) {
+      this.password = password;
+   }
+
+   public int getReportNum() {
+      return reportNum;
+   }
+
+   public void setReportNum(int reportNum) {
+      this.reportNum = reportNum;
+   }
+
+   public String getDescriptWork() {
+      return descriptWork;
+   }
+
+   public void setDescriptWork(String descriptWork) {
+      this.descriptWork = descriptWork;
+   }
+
+   public String getResultWork() {
+      return resultWork;
+   }
+
+   public void setResultWork(String resultWork) {
+      this.resultWork = resultWork;
+   }
+
+   public String getHistoryOut() {
+      return historyOut;
+   }
+
+   public void setHistoryOut(String historyOut) {
+      this.historyOut = historyOut;
+   }
 }
-
-
 
 

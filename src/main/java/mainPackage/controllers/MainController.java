@@ -1,5 +1,6 @@
 package mainPackage.controllers;
 
+import mainPackage.ReportsData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.http.HttpStatus;
@@ -18,33 +19,24 @@ public class MainController {
 
 //   @Autowired
 //   GeneratorFunc gf;
-//
-//   @PostMapping("/data")
-//   public ResponseEntity<GeneratorData> createX(@RequestBody GeneratorData gd) {
-//
-//      gd.setOutTxt(gf.sortFunc(gd));
-//
-//      return new ResponseEntity<GeneratorData>(gd, HttpStatus.OK);
-//   }
-//
-//
-//   @PostMapping("/dataSave")
-//   public ResponseEntity<GeneratorData> createX2(@RequestBody GeneratorData gd) {
-//
-//      gd.setOutTxt(gf.sortFunc(gd));
-//      mongoTemplate.insert(gd, "GeneratorCollect");
-//
-//      return new ResponseEntity<GeneratorData>(gd, HttpStatus.OK);
-//   }
-//
-//
-//   @GetMapping("/getAll")
-//   public ResponseEntity<List<GeneratorData>> createX3() {
-//
-//      List<GeneratorData> r = mongoTemplate.findAll(GeneratorData.class, "GeneratorCollect");
-//
-//      return new ResponseEntity<>(r, HttpStatus.OK);
-//   }
+
+   @PostMapping("/nameX1")
+   public ResponseEntity<ReportsData> cre1(@RequestBody ReportsData rd) {
+
+
+      return new ResponseEntity<ReportsData>(rd, HttpStatus.OK);
+   }
+
+
+
+
+   @GetMapping("/getReports")
+   public ResponseEntity<List<ReportsData>> cre2() {
+
+      List<ReportsData> r = mongoTemplate.findAll(ReportsData.class, "ReportsCollect");
+
+      return new ResponseEntity<>(r, HttpStatus.OK);
+   }
 
 
 }
