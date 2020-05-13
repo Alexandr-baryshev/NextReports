@@ -1,26 +1,32 @@
 /*=========== Конфиги и т.д. ======================*/
 @font-face {
-  font-family: 'Montserrat';
-  src: url("../fonts/Exo2");
+   font-family: 'Exo 2';
+   src: url("../fonts/Exo2");
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+   -webkit-appearance: none;
 }
+
 input:focus, select:focus, textarea:focus, button:focus {
-  outline: none;
+   outline: none;
 }
+
 textarea {
-  resize: none;
+   resize: none;
 }
 
 ::placeholder {
-  color: #8e8175;
+   color: #8e8175;
 }
 
 .container, .container-fluid {
-  padding: 0;
-  margin: 0;
+   padding: 0;
+   margin: 0;
+}
+
+.nav-link {
+   padding: 0;
 }
 
 /*=====================================================*/
@@ -28,16 +34,65 @@ textarea {
 /*------- Маржины, падинги, размеры и т.д. -----------*/
 
 
-
-/*----------------------------------------------------*/
-
-body {
-  background-color: hsl(0, 0%, 97%);
+.exo-1r {
+   font-family: 'Exo 2', serif;
+   font-size: 1rem;
+   font-weight: normal;
+}
+.redTxt  {
+   color: hsl(0, 100%, 35%);
+}
+.redTxt:hover {
+   color: hsl(0, 100%, 35%);
 }
 
-.header {
-  background-color: #E2E9EF;
-  height: 4rem;
+:root {
+   --lightColor: #6D9EC7;
+   --hardColor: #547B9B;
+
+   --navBarH: 4rem;
+}
+/*----------------------------------------------------*/
+
+
+body {
+   background-color: hsl(0, 0%, 97%);
+   height: 100vh;
+}
+
+.navbar {
+   background-color: #E2E9EF;
+   height: var(--navBarH);
+   padding: 0;
+}
+
+.back {
+   fill: var(--lightColor);
+   height: var(--navBarH);
+   width: 3rem;
+   padding: 1rem;
+}
+
+.save {
+   padding-right: 1rem;
+   width: 6rem;
+   height: var(--navBarH);
+   line-height: var(--navBarH);
+   text-align: right;
+}
+
+.reportName {
+   background-color: #EFF2F4;
+   color: var(--hardColor);
+   height: var(--navBarH);
+   font-weight: bold;
+
+   margin: 0;
+   padding-top: 0.7rem;
+
+   line-height: 1.2rem;
+   text-align: center;
+
 }
 
 
