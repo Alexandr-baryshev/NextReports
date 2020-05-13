@@ -51,6 +51,7 @@ textarea {
    --hardColor: #547B9B;
 
    --navBarH: 4rem;
+   --leftPadd: 1rem;
 }
 /*----------------------------------------------------*/
 
@@ -60,8 +61,8 @@ body {
    height: 100vh;
 }
 
-.navbar {
-   background-color: #E2E9EF;
+.topBar {
+   background-color: #dfe5eb;
    height: var(--navBarH);
    padding: 0;
 }
@@ -70,7 +71,7 @@ body {
    fill: var(--lightColor);
    height: var(--navBarH);
    width: 3rem;
-   padding: 1rem;
+   padding: var(--leftPadd);
 }
 
 .save {
@@ -82,7 +83,7 @@ body {
 }
 
 .reportName {
-   background-color: #EFF2F4;
+   background-color: #edf0f2;
    color: var(--hardColor);
    height: var(--navBarH);
    font-weight: bold;
@@ -92,8 +93,31 @@ body {
 
    line-height: 1.2rem;
    text-align: center;
-
 }
+
+.reportData {
+   height: var(--navBarH);
+   padding: 0;
+   background-color: #e3e3e3;
+}
+
+.reportDetail {
+   background-color: #1c7430;
+   height: var(--navBarH);
+   width: 7rem;
+   padding-left: var(--leftPadd);
+}
+
+.detailInfo {
+   background-color: #0f6674;
+   align-content: center;
+}
+
+.detailName {
+   background-color: #6f4d8d;
+   align-content: center;
+}
+
 
 
 
