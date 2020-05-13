@@ -38,6 +38,7 @@ textarea {
    font-family: 'Exo 2', serif;
    font-size: 1rem;
    font-weight: normal;
+   color: #404040;
 }
 .redTxt  {
    color: hsl(0, 100%, 35%);
@@ -52,6 +53,13 @@ textarea {
 
    --navBarH: 4rem;
    --leftPadd: 1rem;
+}
+.w_3r {
+   width: 3rem;
+}
+
+.w_6r {
+   width: 9rem;
 }
 /*----------------------------------------------------*/
 
@@ -98,24 +106,36 @@ body {
 .reportData {
    height: var(--navBarH);
    padding: 0;
-   background-color: #e3e3e3;
+   /*background-color: #e3e3e3;*/
 }
 
 .reportDetail {
-   background-color: #1c7430;
+   /*background-color: #1c7430;*/
    height: var(--navBarH);
-   width: 7rem;
+   width: 4rem;
    padding-left: var(--leftPadd);
+   padding-top: 0.7rem;
+
 }
 
 .detailInfo {
-   background-color: #0f6674;
-   align-content: center;
+
+   /*background-color: #0f6674;*/
+   text-align: center;
+   margin: 0;
 }
 
 .detailName {
-   background-color: #6f4d8d;
-   align-content: center;
+
+   /*background-color: #6f4d8d;*/
+   border-style: solid;
+   border-width: 0.05rem 0 0 0;
+
+   text-align: center;
+   vertical-align: top;
+   margin: 0;
+   font-size: 0.7rem;
+   color: var(--hardColor);
 }
 
 
