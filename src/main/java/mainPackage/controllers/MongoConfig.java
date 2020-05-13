@@ -1,4 +1,4 @@
-package mainPackage;
+package mainPackage.controllers;
 
 import com.mongodb.MongoClient;
 import org.springframework.context.annotation.Bean;
@@ -15,7 +15,7 @@ public class MongoConfig {
 
    @Bean
    public MongoTemplate mongoTemplate() throws Exception {
-      return new MongoTemplate(mongoX(), "GeneratorDB");
+      return new MongoTemplate(mongoX(), "ReportsDB");
    }
 
 }

@@ -20,21 +20,16 @@ public class MainController {
 //   @Autowired
 //   GeneratorFunc gf;
 
+
    @PostMapping("/nameX1")
    public ResponseEntity<ReportsData> cre1(@RequestBody ReportsData rd) {
-
-
       return new ResponseEntity<ReportsData>(rd, HttpStatus.OK);
    }
 
 
-
-
    @GetMapping("/getReports")
    public ResponseEntity<List<ReportsData>> cre2() {
-
       List<ReportsData> r = mongoTemplate.findAll(ReportsData.class, "ReportsCollect");
-
       return new ResponseEntity<>(r, HttpStatus.OK);
    }
 
