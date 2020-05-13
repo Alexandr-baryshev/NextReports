@@ -1,0 +1,277 @@
+/*=========== Конфиги и т.д. ======================*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat");
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+::placeholder {
+  color: #8e8175;
+}
+
+.container, .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+/*================================================*/
+
+/*---------------- Маржины разные и т.д. ----------------*/
+
+.m-L2 {
+  margin-left: 2px;
+}
+
+.m-T2 {
+  margin-top: 2px;
+}
+
+.h-65 {
+  height: 65%;
+}
+
+.p-TLR-4 {
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+}
+.p_4 {
+  padding: 4px;
+}
+
+.m-TB10-L5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.m-T10-L5 {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.m-L5 {
+  margin-left: 5px;
+}
+
+.m-L10 {
+  margin-left: 10px;
+}
+
+.w55-h10 {
+  width: 55px; height: 5px;
+}
+
+.h-100px {
+  height: 100px;
+}
+
+.w-363px {
+width: 363px !important;
+}
+
+.h-186px {
+  height: 186px !important;
+}
+
+/*-------------------------------------------------*/
+
+body {
+  background-color: #33373B;
+}
+
+.navPanel {
+  background-color: #3E3E3E;
+  height: 40px !important;
+}
+
+.navButton {
+  font-family: 'Montserrat', serif;
+  font-size: 14px;
+  font-style: normal;
+  color: #c4c4c4;
+
+  padding-top: 0;
+  padding-bottom: 0;
+
+  height: 40px !important;
+  line-height: 40px;
+  vertical-align: middle;
+
+}
+.navButton:hover {
+  color: #c2aaaa;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.navButtonActive {
+  color: #c2aaaa;
+  background-color: #33373B
+}
+
+
+.q {
+  /*background-color: #4e555b;*/
+  /*height: 50px;*/
+}
+
+
+
+:root { --v-center: 25px; }
+.name-bg {
+  background-color: rgba(255, 255, 255, 0.02);
+  height: var(--v-center);
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+  line-height: var(--v-center);
+
+  font-family: 'Montserrat', serif;
+  font-size: 11px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+
+.inputRC {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 50px; height: 20px;
+
+  border-width:  0 0 2px;
+  border-color: rgba(255, 255, 255, 0.2);
+
+  text-align: center;
+  font-family: 'Montserrat', serif;
+  font-size: 10px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+.inputRC:hover {
+  background-color: rgba(255, 255, 255, 0.2)
+}
+
+.labelParam {
+  width: 55px; height: 20px;
+  text-align: right;
+  font-family: 'Montserrat', serif;
+  font-size: 11px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+
+.labelParam2 {
+  /*background-color: #0c5460;*/
+  width: 50px; height: 10px;
+  margin-left: 5px;
+  margin-bottom: 0;
+  line-height: 10px;
+
+  text-align: center;
+  font-family: 'Montserrat', serif;
+  font-size: 10px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+
+.labelParam3 {
+  /*background-color: #0c5460;*/
+  width: 50px; height: 10px;
+  margin-left: 5px;
+  margin-bottom: 0;
+
+
+  text-align: center;
+  vertical-align: top;
+  font-family: 'Montserrat', serif;
+  font-size: 10px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+
+
+.inputBlockLeft {
+
+  border-style: solid;
+  border-width: 0;
+  border-color: gray;
+
+  min-width: 363px;
+  width: 363px !important;
+
+}
+
+.inputParam {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+
+
+.inputBlockRight {
+  /*background-color: rgba(102, 115, 122, 0.12);*/
+  height: 263px !important;
+}
+
+
+
+.button {
+  background-color:#6E6969;
+  padding: 0;
+
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Montserrat', serif;
+  font-size: 10px;
+  font-weight: normal;
+  color: #c4c4c4;
+
+  border-width: 0;
+
+  width: 80px;
+  height: 30px;
+
+}
+.button:hover {
+  background-color: #725c5c;
+}
+
+.textArea {
+  background-color: rgba(102, 115, 122, 0.12);
+  padding: 2px;
+  border-width: 0;
+
+  font-size: 12px;
+  font-weight: normal;
+  color: #b2deda;
+  height: 70vh;
+
+}
+
+.textArea:hover {
+  background-color: rgba(102, 115, 122, 0.3);
+}
+
+.list {
+  background-color: rgba(102, 115, 150, 0.05);
+  padding: 2px;
+  border-width: 0;
+  margin-top: 1px;
+
+  font-size: 12px;
+  font-weight: normal;
+  color: #b2deda;
+}
+
+.list:hover {
+  background-color: rgba(102, 115, 122, 0.3);
+}
