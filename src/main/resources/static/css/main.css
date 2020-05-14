@@ -44,7 +44,7 @@ label {
    --lightColor: #6D9EC7;
    --hardColor: #547B9B;
 
-   --navBarH: 60px;
+   --navBarH: 60px !important;
    --LR-Padd: 20px;
 
 }
@@ -63,13 +63,24 @@ label {
 .w_50 {
    width: 50px;
 }
+.w_70 {
+   width: 70px;
+}
 
 .w_150 {
    width: 150px;
 }
+.w_200 {
+   width: 200px !important;
+}
+
 
 .LR-Padd {
    padding: 0 var(--LR-Padd);
+}
+
+.mTop {
+   margin-top: 10px;
 }
 
 
@@ -91,7 +102,7 @@ body {
    fill: var(--lightColor);
    height: var(--navBarH);
    width: 50px;
-   padding-top: 10px;
+   padding-top: 14px;
 }
 
 .save {
@@ -131,9 +142,8 @@ body {
 }
 
 .reportDetail {
-   /*background-color: #1c7430;*/
+
    height: var(--navBarH);
-   width: 70px;
    padding-left: var(--LR-Padd);
    padding-top: 10px;
 
@@ -141,6 +151,7 @@ body {
 
 .detailInfo {
    background-color: transparent;
+   height: 20px;
    text-align: center;
    font-size: 1.4rem;
    margin: 0;
@@ -169,5 +180,11 @@ body {
    font-size: 1.4rem;
    font-weight: 400;
    color: #4c4c4c;
+}
+.labelArea {
+
+   margin: 0;
+   font-size: 1.2rem;
+   color: var(--hardColor);
 }
 
