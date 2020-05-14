@@ -16,6 +16,10 @@ textarea {
    resize: none;
 }
 
+label {
+   margin: 0;
+}
+
 ::placeholder {
    color: #8e8175;
 }
@@ -29,38 +33,46 @@ textarea {
    padding: 0;
 }
 
+
 /*=====================================================*/
 
 /*------- Маржины, падинги, размеры и т.д. -----------*/
 
-
-.exo-1r {
-   font-family: 'Exo 2', serif;
-   font-size: 1rem;
-   font-weight: normal;
-   color: #404040;
-}
-.redTxt  {
-   color: hsl(0, 100%, 35%);
-}
-.redTxt:hover {
-   color: hsl(0, 100%, 35%);
-}
-
 :root {
+   font-size: 10px;
+
    --lightColor: #6D9EC7;
    --hardColor: #547B9B;
 
-   --navBarH: 4rem;
-   --leftPadd: 1rem;
-}
-.w_3r {
-   width: 3rem;
+   --navBarH: 60px;
+   --LR-Padd: 20px;
+
 }
 
-.w_6r {
-   width: 9rem;
+
+
+.Exo-2 {
+   font-family: 'Exo 2', serif;
+   color: #4d4d4d;
 }
+.font-20 {
+   font-size: 2rem;
+}
+
+
+.w_50 {
+   width: 50px;
+}
+
+.w_150 {
+   width: 150px;
+}
+
+.LR-Padd {
+   padding: 0 var(--LR-Padd);
+}
+
+
 /*----------------------------------------------------*/
 
 
@@ -72,34 +84,43 @@ body {
 .topBar {
    background-color: #dfe5eb;
    height: var(--navBarH);
-   padding: 0;
+   padding: 0 var(--LR-Padd);
 }
 
 .back {
    fill: var(--lightColor);
    height: var(--navBarH);
-   width: 3rem;
-   padding: var(--leftPadd);
+   width: 50px;
+   padding-top: 10px;
 }
 
 .save {
-   padding-right: 1rem;
-   width: 6rem;
+   font-size: 1.6rem;
+   font-weight: 600;
+   color: #d41212;
+
+   width: 100px;
    height: var(--navBarH);
    line-height: var(--navBarH);
    text-align: right;
 }
+.save:hover {
+   color: #f10707;;
+}
+
 
 .reportName {
    background-color: #edf0f2;
    color: var(--hardColor);
    height: var(--navBarH);
-   font-weight: bold;
+
+   font-size: 16px;
+   font-weight: 600;
 
    margin: 0;
-   padding-top: 0.7rem;
+   padding-top: 10px;
 
-   line-height: 1.2rem;
+   line-height: 1.2;
    text-align: center;
 }
 
@@ -112,32 +133,41 @@ body {
 .reportDetail {
    /*background-color: #1c7430;*/
    height: var(--navBarH);
-   width: 4rem;
-   padding-left: var(--leftPadd);
-   padding-top: 0.7rem;
+   width: 70px;
+   padding-left: var(--LR-Padd);
+   padding-top: 10px;
 
 }
 
 .detailInfo {
-
-   /*background-color: #0f6674;*/
+   background-color: transparent;
    text-align: center;
+   font-size: 1.4rem;
    margin: 0;
+   border: 0;
+
 }
 
 .detailName {
-
    /*background-color: #6f4d8d;*/
    border-style: solid;
-   border-width: 0.05rem 0 0 0;
+   border-width: 1px 0 0 0;
 
    text-align: center;
    vertical-align: top;
    margin: 0;
-   font-size: 0.7rem;
+   font-size: 1.2rem;
    color: var(--hardColor);
 }
 
+.textArea {
+   height: 150px;
 
+   border: 1px solid #cbcbcb;
+   border-radius: 4px;
 
+   font-size: 1.4rem;
+   font-weight: 400;
+   color: #4c4c4c;
+}
 
