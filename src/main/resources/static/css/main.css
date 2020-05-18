@@ -215,13 +215,23 @@ body {
 }
 
 .down-menu {
-   z-index: 99;
+   z-index: 98;
    position: fixed;
+   bottom: 20px;
    width: 100%;
-   height: available;
+   min-height: 50px;
 }
 
-.button {
+.newRep {
+   display: flex;
    height: 50px;
-   width: 200px;
+   line-height: 50px;
+   align-content: center;
+
+   background-color: var(--lightColor);
+   border-radius: 4px;
+
+   font-size: 15px;
+   font-weight: 600;
+   color: #f1f1f1;
 }

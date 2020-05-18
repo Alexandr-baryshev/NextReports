@@ -122,7 +122,6 @@ body {
 .test-bottom-menu_1 {
     z-index: 98;
     position: fixed;
-    display: inline-block;
     bottom: 20px;
     width: 100%;
     min-height: 50px;
