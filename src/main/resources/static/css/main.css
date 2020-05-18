@@ -85,13 +85,13 @@ body {
 }
 
 .topBar {
-   background-color: #dfe5eb;
+   background-color: #ced5dc;
    height: var(--navbar_h);
+   right: 0;
 }
 .top-menu {
    z-index: 99;
    position: fixed;
-   top: 0;
    width: 100vw;
    height: available;
 }
@@ -117,15 +117,18 @@ body {
    color: #f10707;;
 }
 
+.empty-top{
+   height: calc((var(--navbar_h) * 2) + 5px);
+}
 .input-bg {
    z-index: 0;
+   background-color: #1d2124;
    height: available;
-   bottom: 0;
-   margin-top: calc((var(--navbar_h) * 2) + 5px);
+
 }
 
 .reportName {
-   background-color: #edf0f2;
+   background-color: #e1e6ea;
    color: var(--hardColor);
    height: var(--navbar_h);
 
