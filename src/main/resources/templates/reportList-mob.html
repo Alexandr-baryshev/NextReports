@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
    <title>Список отчетов</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
    <!-- ********** Для SPRING ***********-->
    <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+   <link rel="stylesheet" href="css/superstrap.css" type="text/css"/>
    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+
    <!-- ********** Для LIVE EDIT ***********-->
    <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css"/>
-   <link rel="stylesheet" href="../static/css/main.css" type="text/css"/>
    <link rel="stylesheet" href="../static/css/superstrap.css" type="text/css"/>
+   <link rel="stylesheet" href="../static/css/main.css" type="text/css"/>
 
    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
    <script type="text/javascript" src="js/newReport.js"></script>
 </head>
-<body class="container-fluid ">
 
+<body class="container-fluid">
 
+<div class="top-menu">
+   <nav class="navbar topBar px_15px">
+      <a class="back" href="">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 256 512">
+            <path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/>
+         </svg>
+      </a>
+      <div class="test-block_1">
+         <input class="Exo-2 detailInfo w_50px b-bottom " id="numb_id" type="number" placeholder="№">
+         <div class="empty-10px"></div>
+         <input class="Exo-2 detailInfo w_150px b-bottom " id="date_id" type="date"  >
+      </div>
+   </nav>
+   <p class="Exo-2 reportName">Отчет о выполненных <br> профилактических работах</p>
+</div>
+
+<div class="input-bg px_15px">
+   <div class="empty-top"></div>
+
+   <div>
+      <div class="empty-10px"></div>
+      <ul class="list-group w-100 Exo-2 ">
+         <li class="list-group-item list">1 - 02.05.2020 08:12</li>
+         <li class="list-group-item list">2 - 05.05.2020 12:55</li>
+         <li class="list-group-item list">3 - 05.05.2020 20:25</li>
+         <li class="list-group-item list">5 - 07.05.2020 11:34</li>
+      </ul>
+   </div>
+   <div class="empty-10px border-bottom"></div>
+
+</div>
 
 </body>
 </html>

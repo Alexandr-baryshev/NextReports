@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Создание отчета</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Создание отчета</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- ********** Для SPRING ***********-->
-        <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
-        <link rel="stylesheet" href="css/main.css" type="text/css"/>
-    <link rel="stylesheet" href="css/superstrap.css" type="text/css"/>
-    <!-- ********** Для LIVE EDIT ***********-->
-    <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="../static/css/superstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="../static/css/main.css" type="text/css"/>
+   <!-- ********** Для SPRING ***********-->
+   <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+   <link rel="stylesheet" href="css/superstrap.css" type="text/css"/>
+   <link rel="stylesheet" href="css/main.css" type="text/css"/>
 
+   <!-- ********** Для LIVE EDIT ***********-->
+   <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css"/>
+   <link rel="stylesheet" href="../static/css/superstrap.css" type="text/css"/>
+   <link rel="stylesheet" href="../static/css/main.css" type="text/css"/>
 
-    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="js/newReport.js"></script>
-
+   <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+   <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+   <script type="text/javascript" src="js/newReport.js"></script>
 </head>
 
 <body class="container-fluid">
 
 <div class="top-menu">
-    <nav class="navbar topBar px_15px">
-        <a class="back" href="">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 256 512">
-                <path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/>
-            </svg>
-        </a>
-        <a class="nav-link Exo-2 save" href="">cохранить</a>
-    </nav>
-    <p class="Exo-2 reportName">Отчет о выполненных <br> профилактических работах</p>
+   <nav class="navbar topBar px_15px">
+      <a class="back" href="">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 256 512">
+            <path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/>
+         </svg>
+      </a>
+      <a class="nav-link Exo-2 save" href="">cохранить</a>
+   </nav>
+   <p class="Exo-2 reportName">Отчет о выполненных <br> профилактических работах</p>
 </div>
 
 <div class="input-bg px_15px">
-    <div class="empty-top"></div>
-    <div class="test-block_1">
-        <div class="test-block-in_1 w_50px"></div>
-        <div class="empty-10px"></div>
-        <div class="test-block-in_1 w_500px"></div>
-    </div>
-    <div class="empty-10px"></div>
+   <div class="empty-top"></div>
 
-    <div class="test-block_2">
-        <label class="w-100 labelArea  Exo-2">Описание работ</label>
-        <textarea class="w-100 Exo-2 textArea"></textarea>
-    </div>
-    <div class="empty-10px"></div>
+   <div class="d-flex reportData">
+      <div class="reportDetail w_70">
+         <input class="Exo-2 detailInfo w_50" id="numb_id" type="number">
+         <label class="Exo-2 detailName w_50">номер</label>
+      </div>
+      <div class="empty-10px"></div>
 
-    <div class="test-block_3">
-        <label class="w-100 labelArea  Exo-2">Результат</label>
-        <textarea class="w-100 Exo-2 textArea"></textarea>
-    </div>
-    <div class="empty-10px"></div>
+      <div class="reportDetail w_200">
+         <input class="Exo-2 detailInfo w_200" id="date_id" type="datetime-local">
+         <label class="Exo-2 detailName w_150">дата выполнения</label>
+      </div>
+   </div>
+
+   <div class="empty-10px "></div>
+
+   <div>
+      <label class="w-100 labelArea  Exo-2">Описание работ</label>
+      <textarea class="w-100 Exo-2 textArea"></textarea>
+   </div>
+   <div class="empty-10px"></div>
+
+   <div>
+      <label class="w-100 labelArea  Exo-2">Результат</label>
+      <textarea class="w-100 Exo-2 textArea"></textarea>
+   </div>
+   <div class="empty-10px"></div>
 </div>
 
 
