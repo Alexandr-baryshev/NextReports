@@ -18,14 +18,14 @@ public class HTTPController {
 //      return "main-mob";
 //   }
 
-   @GetMapping("/")
+   @GetMapping("/newReport-mob")
    public String newReportMob(Model model) {
       return "newReport-mob";
    }
 
-//   @GetMapping("/reportList-mob")
-//   public String reportListMob(Model model) {
-//      return "reportList-mob";
-//   }
+   @GetMapping("/")
+   public String reportListMob(Model model) {
+      return "reportList-mob";
+   }
 
 }
