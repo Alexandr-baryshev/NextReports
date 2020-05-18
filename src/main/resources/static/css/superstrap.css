@@ -30,6 +30,7 @@ body {
 :root {
     --navbar_h: 50px !important;
 }
+
 .test-top-menu_1 {
     z-index: 99;
     position: fixed;
@@ -44,7 +45,8 @@ body {
     font-size: 15px;
     color: #1b1e21;
 }
-.empty-top{
+
+.empty-top {
     height: calc(var(--navbar_h) + 5px);
 }
 
@@ -59,6 +61,7 @@ body {
     font-size: 15px;
     color: #1b1e21;
 }
+
 /**************************************/
 
 .test-block_1 {
@@ -120,6 +123,7 @@ body {
     height: 10px !important;
     width: 10px !important;
 }
+
 .empty-15px {
     height: 15px !important;
     width: 20px !important;
@@ -941,20 +945,10 @@ body {
 
 /* ... .border_0 ... */
 .border_0 {
-    border: 0;
+    border: 0 !important;
 }
-.border-t_0 {
-    border-top: 0;
-}
-.border-r_0 {
-    border-right: 0;
-}
-.border-b_0 {
-    border-bottom: 0;
-}
-.border-b_0 {
-    border-left: 0;
-}
+
+
 /* ... .border_1 ... */
 
 .border_1 {
@@ -962,16 +956,23 @@ body {
 }
 
 .border-t_1 {
-    border-top: 1px solid #808080 !important;
+    border: solid #808080;
+    border-width: 1px 0 0 0 !important;
 }
+
 .border-r_1 {
-    border-right: 1px solid #808080 !important;
+    border: solid #808080;
+    border-width: 0 1px 0 0 !important;
 }
+
 .border-b_1 {
-    border-bottom: 1px solid #808080 !important;
+    border: solid #808080;
+    border-width: 0 0 1px 0 !important;
 }
-.border-b_1 {
-    border-left: 1px solid #808080 !important;
+
+.border-l_1 {
+    border: solid #808080;
+    border-width: 0 0 0 1px !important;
 }
 
 /* ... .border_2 ... */
@@ -981,14 +982,21 @@ body {
 }
 
 .border-t_2 {
-    border-top: 2px solid #808080 !important;
+    border: solid #808080;
+    border-width: 2px 0 0 0 !important;
 }
+
 .border-r_2 {
-    border-right: 2px solid #808080 !important;
+    border: solid #808080;
+    border-width: 0 2px 0 0 !important;
 }
+
 .border-b_2 {
-    border-bottom: 2px solid #808080 !important;
+    border: solid #808080;
+    border-width: 0 0 2px 0 !important;
 }
-.border-b_2 {
-    border-left: 2px solid #808080 !important;
+
+.border-l_2 {
+    border: solid #808080;
+    border-width: 0 0 0 2px !important;
 }
