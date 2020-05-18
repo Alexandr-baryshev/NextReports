@@ -71,7 +71,6 @@ label {
    width: 200px !important;
 }
 
-
 .px_var {
    padding: 0 var(--px_var);
 }
@@ -103,6 +102,12 @@ body {
    height: var(--navbar_h);
    width: 50px;
    padding-top: 14px;
+}
+
+.search {
+   fill: var(--lightColor);
+   height: 40px;
+   padding-top: 5px;
 }
 
 .save {
@@ -156,12 +161,12 @@ body {
 
 .detailInput {
    background-color: transparent;
-   height: 20px;
+   border-color: var(--hardColor);
+
+   height: 25px;
    text-align: center;
    font-size: 1.4rem;
    margin: 0;
-   /*border: 0;*/
-
 }
 
 .detailName {
@@ -209,3 +214,14 @@ body {
    color: #4c4c4c;
 }
 
+.down-menu {
+   z-index: 99;
+   position: fixed;
+   width: 100%;
+   height: available;
+}
+
+.button {
+   height: 50px;
+   width: 200px;
+}

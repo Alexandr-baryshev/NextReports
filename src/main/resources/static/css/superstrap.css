@@ -119,6 +119,22 @@ body {
     color: #1b1e21;
 }
 
+.test-bottom-menu_1 {
+    z-index: 98;
+    position: fixed;
+    display: inline-block;
+    bottom: 20px;
+    width: 100%;
+    min-height: 50px;
+
+    background-color: #bbb3ac;
+    border: 1px solid #B3B3B3;
+    border-radius: 4px;
+
+    font-size: 15px;
+    color: #1b1e21;
+}
+
 .empty-10px {
     height: 10px !important;
     width: 10px !important;
