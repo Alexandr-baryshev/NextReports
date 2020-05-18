@@ -1,6 +1,9 @@
 /*Superstrap - v1.0*/
 /*сайта нет, лицензии тоже*/
 
+
+/*======= Конфиги и т.д. ===========*/
+
 :root {
     font-size: 10px;
 }
@@ -15,6 +18,14 @@ body {
     padding: 0;
     margin: 0;
 }
+
+.navbar {
+    padding: 0;
+    margin: 0;
+}
+
+
+
 /* +++++++ test block's  +++++++++ */
 
 .test-top-menu_1 {
@@ -70,6 +81,7 @@ body {
     font-size: 15px;
     color: #1b1e21;
 }
+
 .test-block_3 {
     z-index: 1;
     height: 100px;
@@ -81,6 +93,7 @@ body {
     font-size: 15px;
     color: #1b1e21;
 }
+
 .test-block-in_1 {
     z-index: 2;
     height: 50px;
@@ -96,12 +109,13 @@ body {
 .empty-10px {
     z-index: 1;
     height: 10px;
-    width:  10px;
+    width: 10px;
 }
+
 .empty-20px {
     z-index: 1;
     height: 20px;
-    width:  20px;
+    width: 20px;
 }
 
 

@@ -24,10 +24,6 @@ label {
    color: #8e8175;
 }
 
-.container, .container-fluid {
-   padding: 0;
-   margin: 0;
-}
 
 .nav-link {
    padding: 0;
@@ -39,14 +35,12 @@ label {
 /*------- Маржины, падинги, размеры и т.д. -----------*/
 
 :root {
-   font-size: 10px;
 
    --lightColor: #6D9EC7;
    --hardColor: #547B9B;
 
-   --navBarH: 60px !important;
-   --LR-Padd: 20px;
-
+   --navbar_h: 60px !important;
+   --px_var: 20px;
 }
 
 
@@ -55,9 +49,7 @@ label {
    font-family: 'Exo 2', serif;
    color: #4d4d4d;
 }
-.font-20 {
-   font-size: 2rem;
-}
+
 
 
 .w_50 {
@@ -75,8 +67,8 @@ label {
 }
 
 
-.LR-Padd {
-   padding: 0 var(--LR-Padd);
+.px_var {
+   padding: 0 var(--px_var);
 }
 
 .mTop {
@@ -94,13 +86,19 @@ body {
 
 .topBar {
    background-color: #dfe5eb;
-   height: var(--navBarH);
-   padding: 0 var(--LR-Padd);
+   height: var(--navbar_h);
+}
+.top-menu {
+   z-index: 99;
+   position: fixed;
+   top: 0;
+   width: 100vw;
+   height: available;
 }
 
 .back {
    fill: var(--lightColor);
-   height: var(--navBarH);
+   height: var(--navbar_h);
    width: 50px;
    padding-top: 14px;
 }
@@ -111,19 +109,25 @@ body {
    color: #d41212;
 
    width: 100px;
-   height: var(--navBarH);
-   line-height: var(--navBarH);
+   height: var(--navbar_h);
+   line-height: var(--navbar_h);
    text-align: right;
 }
 .save:hover {
    color: #f10707;;
 }
 
+.input-bg {
+   z-index: 0;
+   height: available;
+   bottom: 0;
+   margin-top: calc((var(--navbar_h) * 2) + 5px);
+}
 
 .reportName {
    background-color: #edf0f2;
    color: var(--hardColor);
-   height: var(--navBarH);
+   height: var(--navbar_h);
 
    font-size: 16px;
    font-weight: 600;
@@ -136,15 +140,15 @@ body {
 }
 
 .reportData {
-   height: var(--navBarH);
+   height: var(--navbar_h);
    padding: 0;
    /*background-color: #e3e3e3;*/
 }
 
 .reportDetail {
 
-   height: var(--navBarH);
-   padding-left: var(--LR-Padd);
+   height: var(--navbar_h);
+   padding-left: var(--px_var);
    padding-top: 10px;
 
 }
