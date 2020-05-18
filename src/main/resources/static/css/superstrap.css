@@ -40,6 +40,7 @@ body {
     background-color: #b6b6b6;
     border: 1px solid #B3B3B3;
     border-radius: 4px;
+
     font-size: 15px;
     color: #1b1e21;
 }
@@ -49,7 +50,7 @@ body {
 
 .test-bg_1 {
     z-index: 0;
-    height: available;
+    min-height: 200px;
 
     background-color: #d6e2d9;
     border: 1px solid #B3B3B3;
@@ -61,40 +62,44 @@ body {
 /**************************************/
 
 .test-block_1 {
-    z-index: 1;
     display: flex;
-    height: available;
+    z-index: 1;
+    min-height: 50px;
+    padding: 10px;
+    margin: 0;
 
     background-color: #e2d6d6;
     border: 1px solid #b3b3b3;
     border-radius: 4px;
-    padding: 10px;
-    margin: 0;
+
     font-size: 15px;
     color: #1b1e21;
 }
 
 .test-block_2 {
     z-index: 1;
-    height: 100px;
+    min-height: 50px;
+    padding: 10px;
+    margin: 0;
 
     background-color: #d6d8e2;
     border: 1px solid #B3B3B3;
     border-radius: 4px;
-    padding: 10px;
-    margin: 0;
+
     font-size: 15px;
     color: #1b1e21;
 }
 
 .test-block_3 {
     z-index: 1;
-    height: 100px;
+    min-height: 50px;
+    padding: 10px;
+    margin: 0;
+
     background-color: #ded6e2;
     border: 1px solid #B3B3B3;
     border-radius: 4px;
-    padding: 10px;
-    margin: 0;
+
     font-size: 15px;
     color: #1b1e21;
 }
