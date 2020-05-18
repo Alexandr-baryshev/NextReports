@@ -1,0 +1,61 @@
+/*Superstrap - v1.0*/
+/*сайта нет, лицензии тоже*/
+
+:root {
+    font-size: 10px;
+}
+
+/* +++++++ PADDING - rem  +++++++++ */
+/*  <t b> <r l>  |  <t> <r> <b> <l>   */
+
+/* ... p_0 ... */
+
+.p_0 {
+    padding: 0;
+}
+
+.pt_0,
+.py_0 {
+    padding-top: 0;
+}
+
+.pr_0,
+.px_0 {
+    padding-right: 0;
+}
+
+.pb_0,
+.py_0 {
+    padding-bottom: 0;
+}
+
+.pl_0,
+.px_0 {
+    padding-left: 0;
+}
+
+/* ... p_1rem ... */
+
+.p_1rem {
+    padding: 1rem;
+}
+
+.pt_1rem,
+.py_1rem {
+    padding-top: 1rem;
+}
+
+.pr_1rem,
+.px_1rem {
+    padding-right: 1rem;
+}
+
+.pb_1rem,
+.py_1rem {
+    padding-bottom: 1rem;
+}
+
+.pl_1rem,
+.px_1rem {
+    padding-left: 1rem;
+}

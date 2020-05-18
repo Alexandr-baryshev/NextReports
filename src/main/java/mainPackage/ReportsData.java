@@ -75,6 +75,8 @@ public class ReportsData implements Serializable {
    public void setHistoryOut(String historyOut) {
       this.historyOut = historyOut;
    }
+
+
 }
 
 
