@@ -27,9 +27,11 @@ public class MainController {
    }
 
 
-   @GetMapping("/getReports")
+   @GetMapping("/getProfRab")
    public ResponseEntity<List<ReportsData>> cre2() {
-      List<ReportsData> r = mongoTemplate.findAll(ReportsData.class, "ReportsCollect");
+
+      List<ReportsData> r = mongoTemplate.findAll(ReportsData.class, "ProfRab");
+
       return new ResponseEntity<>(r, HttpStatus.OK);
    }
 
