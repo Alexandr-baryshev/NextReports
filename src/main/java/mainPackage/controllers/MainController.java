@@ -17,12 +17,13 @@ public class MainController {
    @Autowired
    protected MongoTemplate mongoTemplate;
 
-//   @Autowired
-//   GeneratorFunc gf;
 
 
-   @PostMapping("/nameX1")
+   @PostMapping("/ProfRab")
    public ResponseEntity<ReportsData> cre1(@RequestBody ReportsData rd) {
+
+      mongoTemplate.insert(rd, "ProfRabCollect");
+
       return new ResponseEntity<ReportsData>(rd, HttpStatus.OK);
    }
 
@@ -30,7 +31,7 @@ public class MainController {
    @GetMapping("/getProfRab")
    public ResponseEntity<List<ReportsData>> cre2() {
 
-      List<ReportsData> r = mongoTemplate.findAll(ReportsData.class, "ProfRab");
+      List<ReportsData> r = mongoTemplate.findAll(ReportsData.class, "ProfRabCollect");
 
       return new ResponseEntity<>(r, HttpStatus.OK);
    }

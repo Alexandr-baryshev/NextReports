@@ -108,6 +108,8 @@ body {
 }
 
 .save {
+   background-color: transparent;
+   border: 0;
    font-size: 1.6rem;
    font-weight: 600;
    color: #d41212;
@@ -118,7 +120,7 @@ body {
    text-align: right;
 }
 .save:hover {
-   color: #f10707;;
+   color: #f10707;
 }
 
 .empty-top{
@@ -198,6 +200,7 @@ body {
 .list {
    background-color: transparent;
    height: 50px;
+   width: 100%;
    line-height: 70px;
    padding: 2px;
    margin-top: 2px;
@@ -209,9 +212,10 @@ body {
    font-size: 16px;
    font-weight: 400;
    color: #4c4c4c;
+   list-style: none;
 }
 .list:hover {
-   color: #5c5c5c;
+   color: #cd2828;
 }
 
 .down-menu {

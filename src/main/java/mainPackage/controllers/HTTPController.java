@@ -23,9 +23,9 @@ public class HTTPController {
       return "newProfRab-mob";
    }
 
-   @GetMapping("reportList-mob")
+   @GetMapping("listProfRab-mob")
    public String reportListMob(Model model) {
-      return "reportList-mob";
+      return "listProfRab-mob";
    }
 
 }
