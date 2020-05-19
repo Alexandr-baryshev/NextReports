@@ -1,7 +1,17 @@
 
-
 $(document).ready(function () {
-    // +++ Добавление в базу +++
+
+    var r = $('#main').attr("data-idEdit")
+    if (r) {
+        load(r)
+    } else {
+        r = sessionStorage.getItem("idReport")
+        if (r) {
+            load(r)
+        }
+    }
+
+    // +++ Добавление в базу ++
     $('#save_id').on('click', function () {
 
         let rdParam = {
@@ -10,9 +20,11 @@ $(document).ready(function () {
             descriptWork: null,
             resultWork: null
         }
-
+        if (r){
+            rdParam.id = r;
+        }
         rdParam.reportNum = $ ('#reportNum_id').val()
-        rdParam.reportDate = $ ('#reportDate_id').val()
+        rdParam.reportDate = new Date($('#reportDate_id').val())
         rdParam.descriptWork = $ ('#descriptWork_id').val()
         rdParam.resultWork = $ ('#resultWork_id').val()
 
@@ -24,52 +36,31 @@ $(document).ready(function () {
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function(dataX){
-
-                // $('#outTxt_id').val(dataX.outTxt);
-
+                document.location.href = "listProfRab-mob"
             },
             failure: function(errMsg) {
                 alert(errMsg);
             }
         });
     })
+})
 
-    // ^^^ Вывод из базы ^^^
+
+function load(idEdit) {
     $.ajax({
         type: "GET",
-        url: "/getProfRab",
+        url: "/getProfRabById?id=" + idEdit,
         data: null,
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function(dataX){
-
-            $('#list_id').empty()
-
-            for (let i = 0; i < dataX.length; i++) {
-                let e = dataX[i];
-                let repDt = new Date(e.reportDate);
-
-                let ne = $("<li class='list' onclick='elementClick(event)'>" + e.reportNum + " &nbsp - &nbsp " + repDt.toLocaleDateString() + " &nbsp &nbsp" + repDt.toLocaleTimeString() + "</li>")
-                ne.data("val", JSON.stringify(e, null , 2))
-                $( "#list_id" ).append(ne)
-            }
-            // $('#historyOut_id').val();
+            $ ('#reportNum_id').val(dataX.reportNum)
+            $ ('#reportDate_id').val(dataX.reportDate)
+            $ ('#descriptWork_id').val(dataX.descriptWork)
+            $ ('#resultWork_id').val(dataX.resultWork)
         },
         failure: function(errMsg) {
             alert(errMsg);
         }
     });
-
-})
-
-function elementClick(paramX) {
-    document.location.href = "newProfRab-mob";
-
-    //******************************************
-    // *****  и где-то тут настал п-ц.. ********
-
-    let li = paramX.currentTarget
-    let f = $(li).data("val")
-    // $('#descriptWork_id').val(f)
-    $('#descriptWork_id').val("TEST - OK")
 }

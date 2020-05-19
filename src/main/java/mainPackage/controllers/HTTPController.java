@@ -3,6 +3,7 @@ package mainPackage.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 @Controller
@@ -19,7 +20,10 @@ public class HTTPController {
    }
 
    @GetMapping("/newProfRab-mob")
-   public String newReportMob(Model model) {
+   public String newReportMob(Model model, @RequestParam(name = "id", required = false) String id0) {
+      if (id0 != null) {
+         model.addAttribute("idEdit", id0);
+      }
       return "newProfRab-mob";
    }
 

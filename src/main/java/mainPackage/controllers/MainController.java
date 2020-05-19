@@ -22,7 +22,7 @@ public class MainController {
    @PostMapping("/ProfRab")
    public ResponseEntity<ReportsData> cre1(@RequestBody ReportsData rd) {
 
-      mongoTemplate.insert(rd, "ProfRabCollect");
+      mongoTemplate.save(rd, "ProfRabCollect");
 
       return new ResponseEntity<ReportsData>(rd, HttpStatus.OK);
    }
@@ -32,7 +32,12 @@ public class MainController {
    public ResponseEntity<List<ReportsData>> cre2() {
 
       List<ReportsData> r = mongoTemplate.findAll(ReportsData.class, "ProfRabCollect");
+      return new ResponseEntity<>(r, HttpStatus.OK);
+   }
 
+   @GetMapping("/getProfRabById")
+   public ResponseEntity<ReportsData> cre3(@RequestParam(name = "id") String id0) {
+      ReportsData r = mongoTemplate.findById(id0, ReportsData.class, "ProfRabCollect");
       return new ResponseEntity<>(r, HttpStatus.OK);
    }
 

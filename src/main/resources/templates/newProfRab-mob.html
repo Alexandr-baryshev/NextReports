@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
    <title>Создание отчета</title>
    <meta charset="utf-8">
@@ -20,7 +20,7 @@
    <script type="text/javascript" src="js/newReport.js"></script>
 </head>
 
-<body class="container-fluid">
+<body id="main" class="container-fluid" th:attr="data-idEdit=${idEdit}" >
 
 <header class="top-menu">
    <nav class="navbar topBar px_20px">
