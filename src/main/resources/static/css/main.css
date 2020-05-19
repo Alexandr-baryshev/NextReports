@@ -210,6 +210,9 @@ body {
    font-weight: 400;
    color: #4c4c4c;
 }
+.list:hover {
+   color: #5c5c5c;
+}
 
 .down-menu {
    z-index: 98;
