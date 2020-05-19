@@ -1,6 +1,8 @@
 package mainPackage;
 
 import java.io.Serializable;
+import java.util.Date;
+
 import org.springframework.data.annotation.Id;
 
 public class ReportsData implements Serializable {
@@ -13,6 +15,7 @@ public class ReportsData implements Serializable {
    private String password;
 
    private int reportNum;
+   private Date reportDate;
    private String descriptWork;
    private String resultWork;
 
@@ -50,6 +53,14 @@ public class ReportsData implements Serializable {
 
    public void setReportNum(int reportNum) {
       this.reportNum = reportNum;
+   }
+
+   public Date getReportDate() {
+      return reportDate;
+   }
+
+   public void setReportDate(Date reportDate) {
+      this.reportDate = reportDate;
    }
 
    public String getDescriptWork() {
