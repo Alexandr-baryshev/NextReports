@@ -22,7 +22,7 @@
 
 <body class="container-fluid">
 
-<header class="top-menu">
+<header class="top-menu px_20px">
     <h1 class=" logo">NEXT</h1>
 </header>
 
@@ -30,8 +30,21 @@
     <div class="empty-top"></div>
 
     <div>
-        <input class="loginInput border-b_1 mt_40px" type="text" placeholder="логин">
-        <input class="loginInput border-b_1 mt_30px" type="password" placeholder="пароль">
+        <div class="border-b_1 d-flex pt_10px">
+            <svg class="loginSvg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512">
+                <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/>
+            </svg>
+            <input class="loginInput border_0 pl_20px " type="text" placeholder="логин">
+        </div>
+
+        <div class="border-b_1 d-flex pt_20px">
+            <svg class="loginSvg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512">
+                <path d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"/>
+            </svg>
+            <input class="loginInput border_0 pl_20px " type="password" placeholder="пароль">
+        </div>
+
+
         <a class="nav-link newRep mt_40px " href="/main-mob">Войти</a>
     </div>
 
