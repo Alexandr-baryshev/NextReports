@@ -21,7 +21,9 @@ label {
 }
 
 ::placeholder {
-   color: #8e8175;
+   color: #cccccc;
+   font-weight: 400;
+
 }
 
 
@@ -226,7 +228,7 @@ body {
    background-color: var(--lightColor);
    border-radius: 4px;
 
-   font-size: 15px;
+   font-size: 20px;
    font-weight: 600;
    color: #f1f1f1;
    text-align: center;
@@ -251,5 +253,18 @@ body {
 }
 
 .loginInput {
+   background-color: transparent;
+   border-color: #cccccc;
+
+
+   height: 50px;
+   line-height: 50px;
+   padding: 2px;
+   width: 100%;
+
+   font-size: 20px;
+   font-weight: 600;
+   color: var(--hardColor);
+   vertical-align:top;
 
 }
