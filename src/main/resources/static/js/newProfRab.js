@@ -6,6 +6,7 @@ $(document).ready(function () {
         load(r)
     } else {
         r = sessionStorage.getItem("idReport")
+        sessionStorage.removeItem("idReport")
         if (r) {
             load(r)
         }
