@@ -24,12 +24,12 @@ public class HTTPController {
       if (id0 != null) {
          model.addAttribute("idEdit", id0);
       }
-      return "newProfRab-mob";
+      return "create-edid-profrab-mob";
    }
 
    @GetMapping("listProfRab-mob")
    public String reportListMob(Model model) {
-      return "listProfRab-mob";
+      return "list-profrab-mob";
    }
 
 }
