@@ -36,7 +36,7 @@ $(document).ready(function () {
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function(dataX){
-                document.location.href = "listProfRab-mob"
+                document.location.href = "list-profrab-mob"
             },
             failure: function(errMsg) {
                 alert(errMsg);

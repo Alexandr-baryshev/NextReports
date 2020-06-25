@@ -35,7 +35,7 @@ function elementClick(paramX) {
     let f = $(li).data("val")
     let id = JSON.parse(f).id
     // nextPage(id)
-    document.location.href = "newProfRab-mob?id=" + id;
+    document.location.href = "create-edit-profrab-mob?id=" + id;
 }
 
 function elementClick2(paramX) {
@@ -43,6 +43,6 @@ function elementClick2(paramX) {
     let f = $(li).data("val")
     let id = JSON.parse(f).id
     sessionStorage.setItem("idReport", id)
-    document.location.href = "newProfRab-mob";
+    document.location.href = "create-edit-profrab-mob";
 }
 

@@ -19,15 +19,15 @@ public class HTTPController {
       return "main-mob";
    }
 
-   @GetMapping("/newProfRab-mob")
+   @GetMapping("/create-edit-profrab-mob")
    public String newReportMob(Model model, @RequestParam(name = "id", required = false) String id0) {
       if (id0 != null) {
          model.addAttribute("idEdit", id0);
       }
-      return "create-edid-profrab-mob";
+      return "create-edit-profrab-mob";
    }
 
-   @GetMapping("listProfRab-mob")
+   @GetMapping("list-profrab-mob")
    public String reportListMob(Model model) {
       return "list-profrab-mob";
    }
